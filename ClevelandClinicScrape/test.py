@@ -1,7 +1,7 @@
 import re
 import requests
 from bs4 import BeautifulSoup
-# This page was to test out crawling on one page before doing the whole website.
+# This page was to test out crawling on one page link before doing them all.
 
 def process_disease_page(url):
     try:

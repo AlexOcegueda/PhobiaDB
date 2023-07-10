@@ -1,58 +1,62 @@
 import json
+from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-
-geckodriver_path = './geckodriver'  # Replace with the actual path to geckodriver
-
-# Configure Firefox options
-firefox_options = Options()
-firefox_options.add_argument("--headless")  # Run Firefox in headless mode
-
-# Set the path to the geckodriver executable
-driver = webdriver.Firefox(
-    executable_path=geckodriver_path,
-    options=firefox_options,
-    capabilities=DesiredCapabilities().FIREFOX
-)
-
-# Set the page load timeout (in seconds)
-timeout = 10
-driver.set_page_load_timeout(timeout)
-
-# Rest of your code using Selenium with Firefox
-# ...
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.firefox.service import Service
+from selenium.common.exceptions import StaleElementReferenceException
 
 def crawl(url):
     try:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
+        driver.get(url)
+        
+        wait = WebDriverWait(driver, 10)
+        alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p","q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+        alpha = ["h", "i", "j", "k", "l", "m", "n", "o", "p","q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+        # browse A-Z btn
+        first_button = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, 'js-library-search-nav__browse-btn')))
+        first_button.click()
 
-        # Find disease links
-        disease_links = driver.find_elements(By.CSS_SELECTOR, 'a.index-list-link')
-        filtered_links = [link for link in disease_links if 'phobia' in link.text.lower()]
+        # clicking through a-z of navigation
+        for letter in alpha:
+            letter_id = f"aab3c309-de3a-40a3-a565-007740a9633djs-{letter}"
+            letter_xpath = f"//*[@id='{letter_id}']"
 
-        for link in filtered_links:
-            href = link.get_attribute('href')
-            base_url = 'https://my.clevelandclinic.org'
-            disease_url = urljoin(base_url, href)
-            print(disease_url)
-            data = process_disease_page(disease_url)
-            save_data_to_json(data)
-            print('Saved data to JSON')
+            second_button = wait.until(EC.element_to_be_clickable((By.XPATH, letter_xpath)))
+            second_button.click()
 
-        # Follow pagination links if available
-        next_link = soup.select_one('a[rel="next"]')
-        if next_link:
-            next_href = next_link['href']
-            next_url = urljoin(base_url, next_href)
-            crawl(next_url)
-    except requests.exceptions.RequestException as e:
+            wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.index-list-link')))
+
+            elements = driver.find_elements(By.CSS_SELECTOR, '.index-list-link') # diseases 
+
+            # Initialize an empty list for the crawled data
+            crawled_data = []
+
+            for element in elements:
+                print(element)
+                try:
+                    element_text = element.text
+
+                    if 'phobia' in element_text.lower():
+                        href = element.get_attribute('href')
+                        if href:
+                            result = process_disease_page(href)
+                            crawled_data.append(result)  
+                except StaleElementReferenceException:
+                    continue
+
+            # Save the list of crawled data to a new JSON file
+            filename = f"crawled_data_{letter}.json"
+            with open(filename, 'w', encoding='utf-8') as file:
+                json.dump(crawled_data, file, ensure_ascii=False)
+        
+    except Exception as e:
         print('Error:', e)
+
 
 def process_disease_page(url):
     try:
@@ -84,13 +88,20 @@ def process_disease_page(url):
     except requests.exceptions.RequestException as e:
         print('Error:', e)
 
-def save_data_to_json(data):
-    with open('crawled_data.json', 'a', encoding='utf-8') as file:
-        json.dump(data, file, ensure_ascii=False)
-        file.write('\n')
+geckodriver_path = './geckodriver'  # Replace with the actual path to geckodriver
+
+# Configure Firefox options
+firefox_options = Options()
+firefox_options.add_argument('-headless')  # Run Firefox in headless mode
+
+# Create a Firefox service instance
+service = Service(geckodriver_path)
+
+# Create a Firefox webdriver instance
+driver = webdriver.Firefox(service=service, options=firefox_options)
 
 starting_url = 'https://my.clevelandclinic.org/health/diseases'
 crawl(starting_url)
 
-# Close the WebDriver instance
+print('done')
 driver.quit()
