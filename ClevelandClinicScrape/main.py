@@ -16,13 +16,13 @@ def crawl(url):
         
         wait = WebDriverWait(driver, 10)
         alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p","q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-        alpha = ["h", "i", "j", "k", "l", "m", "n", "o", "p","q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+        
         # browse A-Z btn
         first_button = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, 'js-library-search-nav__browse-btn')))
         first_button.click()
 
         # clicking through a-z of navigation
-        for letter in alpha:
+        for letter in alphabet:
             letter_id = f"aab3c309-de3a-40a3-a565-007740a9633djs-{letter}"
             letter_xpath = f"//*[@id='{letter_id}']"
 
@@ -90,14 +90,11 @@ def process_disease_page(url):
 
 geckodriver_path = './geckodriver'  # Replace with the actual path to geckodriver
 
-# Configure Firefox options
 firefox_options = Options()
-firefox_options.add_argument('-headless')  # Run Firefox in headless mode
+firefox_options.add_argument('-headless')
 
-# Create a Firefox service instance
 service = Service(geckodriver_path)
 
-# Create a Firefox webdriver instance
 driver = webdriver.Firefox(service=service, options=firefox_options)
 
 starting_url = 'https://my.clevelandclinic.org/health/diseases'
