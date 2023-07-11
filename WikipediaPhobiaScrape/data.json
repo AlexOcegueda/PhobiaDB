@@ -1,123 +1,1592 @@
-[
-    {"name": "Achluophobia", "description": "fear of darkness", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Acousticophobia", "description": "fear of noise, a branch of phonophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Acrophobia", "description": "fear of heights", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Aerophobia", "description": "fear of aircraft or flying", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Agoraphobia", "description": "fear of open places", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Agyrophobia", "description": "fear of crossing streets", "symptoms": "", "causes": "", "treatments": "", "images": ""},
-    {"name": "Aichmophobia", "description": "fear of sharp or pointed objects such as a needle or knife", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Ailurophobia", "description": "fear /dislike of cats, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Alektorophobia", "description": "fear /dislike of chickens, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Anatidaephobia", "description": "fear /dislike of ducks, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Algophobia", "description": "fear of pain", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Alliumphobia", "description": "fear of the strong-scented Allium genus: garlic, onions, chives, shallots", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Ancraophobia", "description": "fear of wind or drafts", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Androphobia", "description": "fear of adult men", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Anthropophobia", "description": "fear of human beings", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Apeirophobia", "description": "fear of infinity, eternity, and the uncountable", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Aphenphosmphobia", "description": "fear of being touched", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Apiphobia", "description": "fear of bees, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Apotemnophobia", "description": "fear of amputees, and/or of becoming an amputee", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Aquaphobia", "description": "fear of water. Distinct from hydrophobia, a scientific property that makes chemicals averse to interaction with water, as well as an archaic name for rabies.", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Arachnophobia", "description": "fear of spiders and other arachnids such as scorpions, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Astraphobia", "description": "fear of thunder and lightning", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Atelophobia", "description": "fear of imperfection", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Atychiphobia", "description": "fear of failure or negative evaluations of others", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Autophobia", "description": "fear of isolation", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Bacteriophobia", "description": "fear of bacteria", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Basophobia, basiphobia", "description": "fear associated with astasia-abasia (fear of walking/standing erect) and a fear of falling", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Batrachophobia", "description": "fear /dislike of frogs and other amphibians, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Belonephobia", "description": "fear of needles or pins", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Bibliophobia", "description": "fear of books", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Cacophobia, aschimophobia", "description": "fear of ugliness", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Carcinophobia", "description": "fear of cancer", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Catoptrophobia", "description": "fear of mirrors", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Chemophobia", "description": "fear of chemicals", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Cherophobia", "description": "fear of happiness", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Chiroptophobia", "description": "fear /dislike of bats, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Chromophobia, chromatophobia", "description": "fear of colors", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Chronophobia", "description": "fear of time and time moving forward", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Chronomentrophobia", "description": "fear of clocks", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Claustrophobia", "description": "fear of having no escape and being closed in", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Coimetrophobia", "description": "fear of cemeteries", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Coprophobia", "description": "fear of feces or defecation", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Coulrophobia", "description": "fear of clowns", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Cyberphobia", "description": "fear of computers", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Cynophobia", "description": "fear /dislike of dogs, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Dendrophobia", "description": "fear of trees", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Dental", "description": "fear , odontophobia fear of dentists and dental procedures", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Dentophobia", "description": "fear of dentists", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Diagraphephobia", "description": "fear of deleting files or an extreme fear of losing your computer data.", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Domatophobia", "description": "fear of houses", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Driving phobia, driving anxiety", "description": "fear of driving", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Ecophobia", "description": "fear of cataclysmic environmental change", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Eisoptrophobia", "description": "fear of mirrors or seeing one's reflection in a mirror", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Emetophobia", "description": "fear of vomiting", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Enochlophobia", "description": "fear of crowds", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Entomophobia", "description": "fear /dislike of insects, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Ephebiphobia", "description": "fear of youth; inaccurate, exaggerated and sensational characterization of young people", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Equinophobia", "description": "fear of horses", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Ergophobia, ergasiophobia", "description": "fear of work or functioning, or a surgeon's fear of operating", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Erotophobia", "description": "fear of sexual love or sexual abuse", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Erythrophobia, erytophobia, ereuthophobia", "description": "fear of the color red, or fear of blushing", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Frigophobia", "description": "fear of becoming too cold", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Gamophobia", "description": "fear of marriage", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Gelotophobia", "description": "fear of being laughed at", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Gephyrophobia", "description": "fear of bridges", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Genophobia, coitophobia", "description": "fear of sexual intercourse", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Genuphobia", "description": "fear of knees or the act of kneeling", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Gerascophobia", "description": "fear of growing old or aging", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Gerontophobia", "description": "fear of growing old, or a hatred or fear of the elderly", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Globophobia", "description": "fear of balloons", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Glossophobia", "description": "fear of speaking in public or of trying to speak", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Gymnophobia", "description": "fear of nudity", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Gynophobia", "description": "fear of adult women", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Halitophobia", "description": "fear of bad breath", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Haphephobia", "description": "fear of being touched", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Heptadekaphobia, heptadecaphobia", "description": "fear of the number 17", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Hedonophobia", "description": "fear of obtaining pleasure", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Heliophobia", "description": "fear of the sun or sunlight", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Helminthophobia, scoleciphobia, vermiphobia", "description": "fear of worms, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Hemophobia, haemophobia", "description": "fear of blood", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Herpetophobia", "description": "fear /dislike of reptiles or amphibians, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Hexakosioihexekontahexaphobia", "description": "fear of the number 666", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Hippophobia", "description": "fear /dislike of horses, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Hodophobia", "description": "fear of travel", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Hydrophobia[25]", "description": "fear of water, see aquaphobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Hypnophobia, somniphobia", "description": "fear of sleep or nightmares", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Hypochondria", "description": "fear of illness", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Ichthyophobia", "description": "fear of fish, including fear of eating fish, or fear of dead fish, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Insectophobia", "description": "fear of insects, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Koumpounophobia", "description": "fear of buttons on clothing", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Lilapsophobia", "description": "fear of tornadoes or hurricanes", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Lepidopterophobia", "description": "fear of butterflies and moths, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Mageiricophobia", "description": "fear of cooking", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Masklophobia", "description": "fear of people in masks, costumes and mascots", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Megalophobia", "description": "fear of large objects", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Melanophobia", "description": "fear of the color black", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Melissophobia, apiphobia", "description": "fear /dislike of bees, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Monophobia", "description": "fear of being alone or isolated or of one's self", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Musophobia, murophobia, suriphobia", "description": "fear /dislike of mice or rats, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Mycophobia", "description": "fear of mushrooms", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Myrmecophobia", "description": "fear of ants, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Mysophobia, germophobia", "description": "fear of germs, contamination or dirt", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Necrophobia", "description": "fear of death or the dead", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Neophobia, cainophobia, cainotophobia, centophobia, kainolophobia, kainophobia, metathesiophobia, prosophobia", "description": "fear of newness, novelty, change or progress", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Noctiphobia", "description": "fear of the night", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Nomophobia", "description": "fear of being out of mobile phone contact", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Nosocomephobia", "description": "fear of hospitals", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Nosophobia", "description": "fear of contracting a disease", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Nostophobia, ecophobia", "description": "fear of returning home", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Numerophobia", "description": "fear of numbers", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Nyctophobia, achluophobia, lygophobia, scotophobia", "description": "fear of darkness", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Obesophobia", "description": "fear of gaining weight", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Oikophobia", "description": "fear of home surroundings and household appliances", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Odontophobia", "description": "fear of dentists", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Ommetaphobia", "description": "fear of eyes", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Oneirophobia", "description": "fear of dreams", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Ophidiophobia", "description": "fear /dislike of snakes, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Ophthalmophobia", "description": "fear of being stared at", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Ornithophobia", "description": "fear /dislike of birds, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Osmophobia, olfactophobia", "description": "fear of odors", "symptoms": "", "causes": "", "treatments": "", "images": ""}, 
-    {"name": "Ostraconophobia", "description": "fear /dislike of shellfish, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Panphobia", "description": "fear of everything or constant fear of an unknown cause", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Pedophobia, paedophobia, pediaphobia", "description": "fear of babies and children", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Phagophobia", "description": "fear of swallowing", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Phallophobia", "description": "fear of erections", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Pharmacophobia", "description": "fear of medications", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Phasmophobia", "description": "fear of ghosts or phantoms", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Philophobia", "description": "fear of love", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Phyllophobia", "description": "fear of leaves", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Phobophobia", "description": "fear of fear itself or of having a phobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Phonophobia", "description": "fear of loud sounds or voices", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Pogonophobia", "description": "fear of beards", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Pornophobia\n\ndislike or", "description": "fear of pornography; may be used in reference to the opposition to visual nudity", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Porphyrophobia", "description": "fear of the color purple", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Pteromerhanophobia", "description": "fear of flying", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Pyrophobia", "description": "fear of fire", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Radiophobia", "description": "fear of radioactivity or X-rays", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Ranidaphobia", "description": "fear /dislike of frogs, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Scopophobia", "description": "fear of being looked at or stared at", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Sexophobia", "description": "fear of sexual organs or sexual activities", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Siderodromophobia", "description": "fear of trains or railroads", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Social phobia", "description": "fear of people or social situations", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Somniphobia", "description": "fear of sleep", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Spectrophobia", "description": "fear of mirrors", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Spheksophobia", "description": "fear of wasps, a zoophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Stasiphobia", "description": "fear of standing or walking", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Submechanophobia", "description": "fear of partially or fully submerged man-made objects", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Taphophobia, taphephobia", "description": "fear of graves, or fear of being placed in a grave while still alive", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Technophobia", "description": "fear of advanced technology (see also Luddite)", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Telephone phobia", "description": "fear or reluctance of making or taking telephone calls", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Teratophobia", "description": "fear of giving birth to a monster or a disfigured foetus", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Tetraphobia", "description": "fear of the number 4", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Thalassophobia", "description": "fear of the sea, or fear of being in the ocean", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Thanatophobia", "description": "fear of dying", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Thermophobia", "description": "fear of intolerance to high temperatures", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Tokophobia", "description": "fear of childbirth or pregnancy", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Tomophobia", "description": "fear of invasive medical procedure", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Tonitrophobia", "description": "fear of thunder", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Toxiphobia", "description": "fear of being poisoned", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Traumatophobia\n\na synonym for injury phobia:", "description": "fear of having an injury", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Trichophobia\n\ndelusional", "description": "fear of something in the roots of the hair that stops it from growing, or fear of hair loss", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Triskaidekaphobia, terdekaphobia", "description": "fear of the number 13", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Trypanophobia, belonephobia, enetophobia", "description": "fear of needles or injections", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Trypophobia", "description": "fear of holes or textures with a pattern of holes", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Vehophobia", "description": "fear of driving", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Verminophobia", "description": "fear of germs", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Workplace phobia", "description": "fear of the workplace, a subset of ergophobia", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Xanthophobia", "description": "fear of the color yellow", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Zoophobia", "description": "fear of animals", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Acephobia", "description": "fear /dislike of asexual people", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Aporophobia", "description": "fear /dislike of people without resources", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Biphobia", "description": "fear /dislike of bisexuality or bisexuals", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Ephebiphobia", "description": "fear /dislike of youth", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Gayphobia", "description": "fear /dislike of gay men (specifically)", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Gerontophobia, gerascophobia", "description": "fear /dislike of aging or the elderly", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Heterophobia", "description": "fear /dislike of heterosexuals", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Homophobia", "description": "fear /dislike of homosexuality, homosexuals, or gays (as opposed to lesbians)", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Lesbophobia", "description": "fear /dislike of lesbians", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Pedophobia", "description": "fear /dislike of babies or children", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Psychophobia", "description": "fear /dislike of mental illness or the mentally ill", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Transphobia", "description": "fear /dislike of transgender people", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Afrophobia", "description": "fear /dislike of Africans", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Albanophobia", "description": "fear /dislike of Albanians", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Anglophobia", "description": "fear /dislike of England or English culture", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Christianophobia", "description": "fear /dislike of Christians", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Germanophobia", "description": "fear /dislike of Germans", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Hinduphobia", "description": "fear /dislike of Hindus", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Hibernophobia", "description": "fear /dislike of Irish people", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Hispanophobia", "description": "fear /dislike of Hispanic people, Hispanic culture and the Spanish language", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Hungarophobia", "description": "fear /dislike of Hungarians", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Indophobia", "description": "fear /dislike of India or Indian culture", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Indonesiaphobia", "description": "fear /dislike of Indonesia or Indonesian culture", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Iranophobia", "description": "fear /dislike of Iran or Iranian culture", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Islamophobia", "description": "fear /dislike of Muslims", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Italophobia", "description": "fear /dislike of Italians", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Judeophobia", "description": "fear /dislike of Jews", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Lusophobia", "description": "fear /dislike of the Portuguese, Portuguese culture and the Portuguese language", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Nipponophobia", "description": "fear /dislike of the Japanese", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Koryophobia", "description": "fear /dislike of the Koreans", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Latinophobia", "description": "fear /dislike of Latin people", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Negrophobia", "description": "fear /dislike of black people", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Polonophobia", "description": "fear /dislike of the Polish", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Russophobia", "description": "fear /dislike of Russians", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Shiaphobia", "description": "fear /dislike of Shiites", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Sinophobia", "description": "fear /dislike of Chinese people", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Sunniphobia", "description": "fear /dislike of Sunnis", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Turcophobia", "description": "fear /dislike of Turks", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Xenophobia", "description": "fear /dislike of foreigners", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Bibliophobia", "description": "fear or hatred of books, as a cultural phenomenon", "symptoms": "", "causes": "", "treatments": "", "images": ""}, {"name": "Coronaphobia", "description": "fear of COVID-19", "symptoms": "", "causes": "", "treatments": "", "images": ""}
+[{
+    "name": "Achluophobia",
+    "description": "fear of darkness",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Acousticophobia",
+    "description": "fear of noise, a branch of phonophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Acrophobia",
+    "description": "fear of heights",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Aerophobia",
+    "description": "fear of aircraft or flying",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Agoraphobia",
+    "description": "fear of open places",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Agyrophobia",
+    "description": "fear of crossing streets",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Aichmophobia",
+    "description": "fear of sharp or pointed objects such as a needle or knife",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Ailurophobia",
+    "description": "fear /dislike of cats, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Alektorophobia",
+    "description": "fear /dislike of chickens, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Anatidaephobia",
+    "description": "fear /dislike of ducks, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Algophobia",
+    "description": "fear of pain",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Alliumphobia",
+    "description": "fear of the strong-scented Allium genus: garlic, onions, chives, shallots",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Ancraophobia",
+    "description": "fear of wind or drafts",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Androphobia",
+    "description": "fear of adult men",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Anthropophobia",
+    "description": "fear of human beings",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Apeirophobia",
+    "description": "fear of infinity, eternity, and the uncountable",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Aphenphosmphobia",
+    "description": "fear of being touched",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Apiphobia",
+    "description": "fear of bees, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Apotemnophobia",
+    "description": "fear of amputees, and/or of becoming an amputee",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Aquaphobia",
+    "description": "fear of water. Distinct from hydrophobia, a scientific property that makes chemicals averse to interaction with water, as well as an archaic name for rabies.",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Arachnophobia",
+    "description": "fear of spiders and other arachnids such as scorpions, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Astraphobia",
+    "description": "fear of thunder and lightning",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Atelophobia",
+    "description": "fear of imperfection",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Atychiphobia",
+    "description": "fear of failure or negative evaluations of others",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Autophobia",
+    "description": "fear of isolation",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Bacteriophobia",
+    "description": "fear of bacteria",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Basophobia, basiphobia",
+    "description": "fear associated with astasia-abasia (fear of walking/standing erect) and a fear of falling",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Batrachophobia",
+    "description": "fear /dislike of frogs and other amphibians, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Belonephobia",
+    "description": "fear of needles or pins",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Bibliophobia",
+    "description": "fear of books",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Cacophobia, aschimophobia",
+    "description": "fear of ugliness",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Carcinophobia",
+    "description": "fear of cancer",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Catoptrophobia",
+    "description": "fear of mirrors",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Chemophobia",
+    "description": "fear of chemicals",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Cherophobia",
+    "description": "fear of happiness",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Chiroptophobia",
+    "description": "fear /dislike of bats, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Chromophobia, chromatophobia",
+    "description": "fear of colors",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Chronophobia",
+    "description": "fear of time and time moving forward",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Chronomentrophobia",
+    "description": "fear of clocks",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Claustrophobia",
+    "description": "fear of having no escape and being closed in",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Coimetrophobia",
+    "description": "fear of cemeteries",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Coprophobia",
+    "description": "fear of feces or defecation",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Coulrophobia",
+    "description": "fear of clowns",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Cyberphobia",
+    "description": "fear of computers",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Cynophobia",
+    "description": "fear /dislike of dogs, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Dendrophobia",
+    "description": "fear of trees",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Dental",
+    "description": "fear , odontophobia fear of dentists and dental procedures",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Dentophobia",
+    "description": "fear of dentists",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Diagraphephobia",
+    "description": "fear of deleting files or an extreme fear of losing your computer data.",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Domatophobia",
+    "description": "fear of houses",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Driving phobia, driving anxiety",
+    "description": "fear of driving",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Ecophobia",
+    "description": "fear of cataclysmic environmental change",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Eisoptrophobia",
+    "description": "fear of mirrors or seeing one's reflection in a mirror",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Emetophobia",
+    "description": "fear of vomiting",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Enochlophobia",
+    "description": "fear of crowds",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Entomophobia",
+    "description": "fear /dislike of insects, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Ephebiphobia",
+    "description": "fear of youth; inaccurate, exaggerated and sensational characterization of young people",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Equinophobia",
+    "description": "fear of horses",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Ergophobia, ergasiophobia",
+    "description": "fear of work or functioning, or a surgeon's fear of operating",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Erotophobia",
+    "description": "fear of sexual love or sexual abuse",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Erythrophobia, erytophobia, ereuthophobia",
+    "description": "fear of the color red, or fear of blushing",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Frigophobia",
+    "description": "fear of becoming too cold",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Gamophobia",
+    "description": "fear of marriage",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Gelotophobia",
+    "description": "fear of being laughed at",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Gephyrophobia",
+    "description": "fear of bridges",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Genophobia, coitophobia",
+    "description": "fear of sexual intercourse",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Genuphobia",
+    "description": "fear of knees or the act of kneeling",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Gerascophobia",
+    "description": "fear of growing old or aging",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Gerontophobia",
+    "description": "fear of growing old, or a hatred or fear of the elderly",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Globophobia",
+    "description": "fear of balloons",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Glossophobia",
+    "description": "fear of speaking in public or of trying to speak",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Gymnophobia",
+    "description": "fear of nudity",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Gynophobia",
+    "description": "fear of adult women",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Halitophobia",
+    "description": "fear of bad breath",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Haphephobia",
+    "description": "fear of being touched",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Heptadekaphobia, heptadecaphobia",
+    "description": "fear of the number 17",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Hedonophobia",
+    "description": "fear of obtaining pleasure",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Heliophobia",
+    "description": "fear of the sun or sunlight",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Helminthophobia, scoleciphobia, vermiphobia",
+    "description": "fear of worms, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Hemophobia, haemophobia",
+    "description": "fear of blood",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Herpetophobia",
+    "description": "fear /dislike of reptiles or amphibians, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Hexakosioihexekontahexaphobia",
+    "description": "fear of the number 666",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Hippophobia",
+    "description": "fear /dislike of horses, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Hodophobia",
+    "description": "fear of travel",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Hydrophobia[25]",
+    "description": "fear of water, see aquaphobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Hypnophobia, somniphobia",
+    "description": "fear of sleep or nightmares",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Hypochondria",
+    "description": "fear of illness",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Ichthyophobia",
+    "description": "fear of fish, including fear of eating fish, or fear of dead fish, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Insectophobia",
+    "description": "fear of insects, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Koumpounophobia",
+    "description": "fear of buttons on clothing",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Lilapsophobia",
+    "description": "fear of tornadoes or hurricanes",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Lepidopterophobia",
+    "description": "fear of butterflies and moths, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Mageiricophobia",
+    "description": "fear of cooking",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Masklophobia",
+    "description": "fear of people in masks, costumes and mascots",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Megalophobia",
+    "description": "fear of large objects",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Melanophobia",
+    "description": "fear of the color black",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Melissophobia, apiphobia",
+    "description": "fear /dislike of bees, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Monophobia",
+    "description": "fear of being alone or isolated or of one's self",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Musophobia, murophobia, suriphobia",
+    "description": "fear /dislike of mice or rats, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Mycophobia",
+    "description": "fear of mushrooms",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Myrmecophobia",
+    "description": "fear of ants, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Mysophobia, germophobia",
+    "description": "fear of germs, contamination or dirt",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Necrophobia",
+    "description": "fear of death or the dead",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Neophobia, cainophobia, cainotophobia, centophobia, kainolophobia, kainophobia, metathesiophobia, prosophobia",
+    "description": "fear of newness, novelty, change or progress",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Noctiphobia",
+    "description": "fear of the night",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Nomophobia",
+    "description": "fear of being out of mobile phone contact",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Nosocomephobia",
+    "description": "fear of hospitals",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Nosophobia",
+    "description": "fear of contracting a disease",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Nostophobia, ecophobia",
+    "description": "fear of returning home",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Numerophobia",
+    "description": "fear of numbers",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Nyctophobia, achluophobia, lygophobia, scotophobia",
+    "description": "fear of darkness",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Obesophobia",
+    "description": "fear of gaining weight",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Oikophobia",
+    "description": "fear of home surroundings and household appliances",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Odontophobia",
+    "description": "fear of dentists",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Ommetaphobia",
+    "description": "fear of eyes",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Oneirophobia",
+    "description": "fear of dreams",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Ophidiophobia",
+    "description": "fear /dislike of snakes, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Ophthalmophobia",
+    "description": "fear of being stared at",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Ornithophobia",
+    "description": "fear /dislike of birds, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Osmophobia, olfactophobia",
+    "description": "fear of odors",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+},
+{
+    "name": "Ostraconophobia",
+    "description": "fear /dislike of shellfish, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Panphobia",
+    "description": "fear of everything or constant fear of an unknown cause",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Pedophobia, paedophobia, pediaphobia",
+    "description": "fear of babies and children",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Phagophobia",
+    "description": "fear of swallowing",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Phallophobia",
+    "description": "fear of erections",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Pharmacophobia",
+    "description": "fear of medications",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Phasmophobia",
+    "description": "fear of ghosts or phantoms",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Philophobia",
+    "description": "fear of love",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Phyllophobia",
+    "description": "fear of leaves",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Phobophobia",
+    "description": "fear of fear itself or of having a phobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Phonophobia",
+    "description": "fear of loud sounds or voices",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Pogonophobia",
+    "description": "fear of beards",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Pornophobia\n\ndislike or",
+    "description": "fear of pornography; may be used in reference to the opposition to visual nudity",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Porphyrophobia",
+    "description": "fear of the color purple",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Pteromerhanophobia",
+    "description": "fear of flying",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Pyrophobia",
+    "description": "fear of fire",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Radiophobia",
+    "description": "fear of radioactivity or X-rays",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Ranidaphobia",
+    "description": "fear /dislike of frogs, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Scopophobia",
+    "description": "fear of being looked at or stared at",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Sexophobia",
+    "description": "fear of sexual organs or sexual activities",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Siderodromophobia",
+    "description": "fear of trains or railroads",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Social phobia",
+    "description": "fear of people or social situations",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Somniphobia",
+    "description": "fear of sleep",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Spectrophobia",
+    "description": "fear of mirrors",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Spheksophobia",
+    "description": "fear of wasps, a zoophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Stasiphobia",
+    "description": "fear of standing or walking",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Submechanophobia",
+    "description": "fear of partially or fully submerged man-made objects",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Taphophobia, taphephobia",
+    "description": "fear of graves, or fear of being placed in a grave while still alive",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Technophobia",
+    "description": "fear of advanced technology (see also Luddite)",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Telephone phobia",
+    "description": "fear or reluctance of making or taking telephone calls",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Teratophobia",
+    "description": "fear of giving birth to a monster or a disfigured foetus",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Tetraphobia",
+    "description": "fear of the number 4",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Thalassophobia",
+    "description": "fear of the sea, or fear of being in the ocean",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Thanatophobia",
+    "description": "fear of dying",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Thermophobia",
+    "description": "fear of intolerance to high temperatures",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Tokophobia",
+    "description": "fear of childbirth or pregnancy",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Tomophobia",
+    "description": "fear of invasive medical procedure",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Tonitrophobia",
+    "description": "fear of thunder",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Toxiphobia",
+    "description": "fear of being poisoned",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Traumatophobia\n\na synonym for injury phobia:",
+    "description": "fear of having an injury",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Trichophobia\n\ndelusional",
+    "description": "fear of something in the roots of the hair that stops it from growing, or fear of hair loss",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Triskaidekaphobia, terdekaphobia",
+    "description": "fear of the number 13",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Trypanophobia, belonephobia, enetophobia",
+    "description": "fear of needles or injections",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Trypophobia",
+    "description": "fear of holes or textures with a pattern of holes",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Vehophobia",
+    "description": "fear of driving",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Verminophobia",
+    "description": "fear of germs",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Workplace phobia",
+    "description": "fear of the workplace, a subset of ergophobia",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Xanthophobia",
+    "description": "fear of the color yellow",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Zoophobia",
+    "description": "fear of animals",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Acephobia",
+    "description": "fear /dislike of asexual people",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Aporophobia",
+    "description": "fear /dislike of people without resources",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Biphobia",
+    "description": "fear /dislike of bisexuality or bisexuals",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Ephebiphobia",
+    "description": "fear /dislike of youth",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Gayphobia",
+    "description": "fear /dislike of gay men (specifically)",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Gerontophobia, gerascophobia",
+    "description": "fear /dislike of aging or the elderly",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Heterophobia",
+    "description": "fear /dislike of heterosexuals",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Homophobia",
+    "description": "fear /dislike of homosexuality, homosexuals, or gays (as opposed to lesbians)",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Lesbophobia",
+    "description": "fear /dislike of lesbians",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Pedophobia",
+    "description": "fear /dislike of babies or children",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Psychophobia",
+    "description": "fear /dislike of mental illness or the mentally ill",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Transphobia",
+    "description": "fear /dislike of transgender people",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Afrophobia",
+    "description": "fear /dislike of Africans",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Albanophobia",
+    "description": "fear /dislike of Albanians",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Anglophobia",
+    "description": "fear /dislike of England or English culture",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Christianophobia",
+    "description": "fear /dislike of Christians",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Germanophobia",
+    "description": "fear /dislike of Germans",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Hinduphobia",
+    "description": "fear /dislike of Hindus",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Hibernophobia",
+    "description": "fear /dislike of Irish people",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Hispanophobia",
+    "description": "fear /dislike of Hispanic people, Hispanic culture and the Spanish language",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Hungarophobia",
+    "description": "fear /dislike of Hungarians",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Indophobia",
+    "description": "fear /dislike of India or Indian culture",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Indonesiaphobia",
+    "description": "fear /dislike of Indonesia or Indonesian culture",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Iranophobia",
+    "description": "fear /dislike of Iran or Iranian culture",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Islamophobia",
+    "description": "fear /dislike of Muslims",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Italophobia",
+    "description": "fear /dislike of Italians",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Judeophobia",
+    "description": "fear /dislike of Jews",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Lusophobia",
+    "description": "fear /dislike of the Portuguese, Portuguese culture and the Portuguese language",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Nipponophobia",
+    "description": "fear /dislike of the Japanese",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Koryophobia",
+    "description": "fear /dislike of the Koreans",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Latinophobia",
+    "description": "fear /dislike of Latin people",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Negrophobia",
+    "description": "fear /dislike of black people",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Polonophobia",
+    "description": "fear /dislike of the Polish",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Russophobia",
+    "description": "fear /dislike of Russians",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Shiaphobia",
+    "description": "fear /dislike of Shiites",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Sinophobia",
+    "description": "fear /dislike of Chinese people",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Sunniphobia",
+    "description": "fear /dislike of Sunnis",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Turcophobia",
+    "description": "fear /dislike of Turks",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Xenophobia",
+    "description": "fear /dislike of foreigners",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Bibliophobia",
+    "description": "fear or hatred of books, as a cultural phenomenon",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}, {
+    "name": "Coronaphobia",
+    "description": "fear of COVID-19",
+    "symptoms": "",
+    "causes": "",
+    "treatments": "",
+    "images": ""
+}
 ]

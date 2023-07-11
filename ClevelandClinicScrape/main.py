@@ -1,5 +1,14 @@
+"""
+Crawl and extract data from a ClevelandClinic.org about phobias. 
+This can be modified to return ALL diseases and I am planning to 
+add in documentations where to comment out the phobia filter to 
+achieve this. 
+
+Author: Alex Ocegueda Castro
+Version: 1.0
+"""
+
 import json
-from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -11,17 +20,30 @@ from selenium.webdriver.firefox.service import Service
 from selenium.common.exceptions import StaleElementReferenceException
 
 def crawl(url):
+    """
+    Crawl the website and extract data related to phobias.
+
+    Args:
+        url (str): The URL of the website to crawl.
+
+    Returns:
+        None
+
+    Raises:
+        Exception: If any error occurs during the crawling process.
+        StaleElementReferenceException: Pops up if an element has gone out of scope and skips it.
+    """
     try:
         driver.get(url)
         
         wait = WebDriverWait(driver, 10)
         alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p","q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
         
-        # browse A-Z btn
+        # Browse A-Z btn
         first_button = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, 'js-library-search-nav__browse-btn')))
         first_button.click()
 
-        # clicking through a-z of navigation
+        # Click through A-Z navigation
         for letter in alphabet:
             letter_id = f"aab3c309-de3a-40a3-a565-007740a9633djs-{letter}"
             letter_xpath = f"//*[@id='{letter_id}']"
@@ -59,6 +81,18 @@ def crawl(url):
 
 
 def process_disease_page(url):
+    """
+    Process a specific disease page and extract relevant data.
+
+    Args:
+        url (str): The URL of the disease page.
+
+    Returns:
+        dict: The extracted data from the disease page.
+
+    Raises:
+        requests.exceptions.RequestException: If any error occurs during the HTTP request.
+    """
     try:
         response = requests.get(url)
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -90,6 +124,7 @@ def process_disease_page(url):
 
 geckodriver_path = './geckodriver'  # Replace with the actual path to geckodriver
 
+# KEEP IN MIND THIS IS FOR FIREFOX. MUST BE MODIFIED FOR CHROME OR OTHER BROWSERS 
 firefox_options = Options()
 firefox_options.add_argument('-headless')
 
