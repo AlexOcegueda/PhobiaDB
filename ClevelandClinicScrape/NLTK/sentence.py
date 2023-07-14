@@ -6,8 +6,9 @@ from rake_nltk import Rake
 
 def process_json_files(input_folder_path, output_folder_path):
     """
-    Processes a folder of JSON files by performing sentence tokenization, keyword extraction,
-    and outputs a new JSON file for each file in the folder specified.
+    Processes a folder of JSON files by performing keyword extraction of specific medical terms
+    for symptoms and treatments of specific phobias. After this it outputs a new JSON file for 
+    each file in the folder specified.
 
     Args:
         input_folder_path (str): Path to the folder containing the input JSON files.
@@ -94,7 +95,6 @@ def process_json_files(input_folder_path, output_folder_path):
                             "how are phobias treated, and can they be cured?"
 
                             ]:
-                            print(heading)    
                             for paragraph in content['items']:
                                 paragraph_sentences = nltk.sent_tokenize(paragraph)
                                 sentences.extend(paragraph_sentences)
