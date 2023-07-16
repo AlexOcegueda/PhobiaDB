@@ -23,8 +23,6 @@ def process_json_files(input_folder_path, output_folder_path):
     rake = Rake()
 
     keywords_to_check = [
-        "lifestyle changes",
-        "upset stomach",
         "excessive sweating",
         "hyperventilation",
         "panic attack",
@@ -35,17 +33,18 @@ def process_json_files(input_folder_path, output_folder_path):
         "lightheaded",
         "feeling queasy",
         "trembling",
-        "having shortness of breath",
-        "virtual reality",
-        "exposure therapy",
-        "cognitive behavior therapy",
         "nausea",
         "shortness of breath",
         "heart palpitations",
         "upset stomach or indigestion",
         "chills",
+
+        "virtual reality",
+        "exposure therapy",
+        "cognitive behavior therapy",
         "psychotherapy",
-        "medication"
+        "medication",
+        "lifestyle changes",
     ]
 
     for filename in os.listdir(input_folder_path):
@@ -119,6 +118,6 @@ def process_json_files(input_folder_path, output_folder_path):
 
 # Example usage
 input_folder_path = '../BackupData'  # Replace with the path to your folder containing input JSON files
-output_folder_path = '../data'  # Replace with the desired path to store the output JSON files
+output_folder_path = '../datas'  # Replace with the desired path to store the output JSON files
 
 process_json_files(input_folder_path, output_folder_path)
