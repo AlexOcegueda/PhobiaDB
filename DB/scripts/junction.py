@@ -49,7 +49,6 @@ def insert_junction_data(json_folder):
                                 for keyword in symptom_keywords:
                                     try:
                                         symptom_id = cursor.execute('SELECT id FROM symptoms WHERE symptom = ?', (keyword,)).fetchone()[0]
-                                        #cursor.execute('INSERT INTO phobia_symptom_treatment (phobia_id, symptom_id) VALUES (?, ?)', (phobia_id, symptom_id))
                                         symptoms.append(symptom_id)
                                     except TypeError:
                                         print("couldn't find", keyword)
@@ -76,7 +75,6 @@ def insert_junction_data(json_folder):
                                 for keyword in treatment_keywords:
                                     try:
                                         treatment_id = cursor.execute('SELECT id FROM treatments WHERE treatment = ?', (keyword,)).fetchone()[0]
-                                        #cursor.execute('INSERT INTO phobia_symptom_treatment (phobia_id, treatment_id) VALUES (?, ?)', (phobia_id, treatment_id))
                                         treatments.append(treatment_id)
                                     except TypeError:
                                         print('Treatment not found', keyword)
@@ -96,11 +94,11 @@ def insert_junction_data(json_folder):
 def main():
     create_junction_table()
 
-    json_folder = './symptoms'  # Specify the path to the folder containing JSON files
+    json_folder = '../symptoms'  # Specify the path to the folder containing JSON files
     insert_junction_data(json_folder)
 
     for junction in junctions:
-        phobia_id, symptom_id ,treatment_id = junction # phobia_id, symptom_id, treatment_id
+        phobia_id, symptom_id ,treatment_id = junction 
         cursor.execute('INSERT INTO phobia_symptom_treatment (phobia_id, symptom_id, treatment_id) VALUES (?, ?, ?)', (phobia_id, symptom_id, treatment_id))
 
     conn.commit()

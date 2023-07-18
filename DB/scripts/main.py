@@ -13,7 +13,7 @@ def view_all_tables():
     for table in tables:
         print(table[0])
 
-def view_all(table):
+def view_table(table):
     """
     Fetches and displays all items from the given table.
     """
@@ -64,10 +64,10 @@ def main():
 
     #view_all('phobia_symptom_treatment')
     #delete_table('phobia_symptom_treatment')
-    #view_all_tables()
-    #view_all('symptoms')
+    view_all_tables()
+    #view_table('phobias')
 
-    get_symptoms_and_treatments('Acrophobia (Fear of Heights)')
+    #get_symptoms_and_treatments('Acrophobia (Fear of Heights)')
     #get_symptom_phobia()
 
 if __name__ == "__main__":
