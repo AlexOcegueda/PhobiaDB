@@ -1,38 +1,41 @@
+from flask import Flask, render_template, request, g
 import sqlite3
 
-# Connect to the 'phobias.db' database
-conn = sqlite3.connect('phobias.db')
-cursor = conn.cursor()
+app = Flask(__name__)
 
-def view_all_tables():
-    # Execute a query to fetch all table names
-    cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
+def get_db():
+    if 'db' not in g:
+        g.db = sqlite3.connect('phobias.db')
+        g.db.row_factory = sqlite3.Row
+    return g.db
 
-    # Fetch all rows and print the table names
-    tables = cursor.fetchall()
-    for table in tables:
-        print(table[0])
+@app.teardown_appcontext
+def close_db(error):
+    db = g.pop('db', None)
+    if db is not None:
+        db.close()
 
-def view_table(table):
-    """
-    Fetches and displays all items from the given table.
-    """
-    cursor.execute(f'SELECT * FROM {table}')
-    rows = cursor.fetchall()
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        # Handle the form submission here if needed
+        pass
 
-    for row in rows:
-        print(row)
+    # Fetch all phobias from the database in alphabetical order
+    db = get_db()
+    cursor = db.cursor()
+    cursor.execute('SELECT name FROM phobias ORDER BY name')
+    phobias = [row['name'] for row in cursor.fetchall()]
 
-def delete_table(table):
-    """
-    Deletes the 'phobias' table from the database.
-    """
-    cursor.execute(f'''DROP TABLE IF EXISTS {table}''')
+    return render_template('index.html', phobias=phobias)
 
-def get_symptoms_and_treatments(phobia_name):
+@app.route('/phobia/<phobia_name>', methods=['GET'])
+def get_phobia_details(phobia_name):
+    db = get_db()
+    cursor = db.cursor()
 
     cursor.execute('''
-        SELECT symptoms.symptom, treatments.treatment
+        SELECT phobias.name, phobias.description, symptoms.symptom, treatments.treatment
         FROM phobia_symptom_treatment
         JOIN symptoms ON phobia_symptom_treatment.symptom_id = symptoms.id
         JOIN treatments ON phobia_symptom_treatment.treatment_id = treatments.id
@@ -41,38 +44,71 @@ def get_symptoms_and_treatments(phobia_name):
     ''', (phobia_name,))
     rows = cursor.fetchall()
 
-    for row in rows:
-        print(row)
+    if rows:
+        phobia_name = rows[0]['name']
+        description = rows[0]['description']
+        symptoms_set = set()
+        treatments_set = set()
 
-def get_symptom_phobia():
-    symptom_id = 1  # Replace with the desired symptom ID
+        for row in rows:
+            symptoms_set.add(row['symptom'])
+            treatments_set.add(row['treatment'])
+
+        symptoms_str = ', '.join(symptoms_set)
+        treatments_str = ', '.join(treatments_set)
+
+        return render_template('phobia_details.html', phobia_name=phobia_name, description=description,
+                               symptoms_str=symptoms_str, treatments_str=treatments_str)
+    
+    else:
+        return '<p>Phobia not found.</p>'
+
+@app.route('/phobia_symptom_treatment', methods=['GET'])
+def display_phobia_symptom_treatment():
+    db = get_db()
+    cursor = db.cursor()
+
+    # Execute a query to fetch data from the phobia_symptom_treatment table
     cursor.execute('''
-        SELECT phobias.name
-        FROM phobia_symptom_treatment
-        JOIN phobias ON phobia_symptom_treatment.phobia_id = phobias.id
-        WHERE symptom_id = ?
-    ''', (symptom_id,))
+    SELECT phobias.name AS phobia, symptoms.symptom, treatments.treatment
+    FROM phobia_symptom_treatment
+    JOIN phobias ON phobia_symptom_treatment.phobia_id = phobias.id
+    JOIN symptoms ON phobia_symptom_treatment.symptom_id = symptoms.id
+    JOIN treatments ON phobia_symptom_treatment.treatment_id = treatments.id
+    ORDER BY phobias.name
+    ''')
+
+    # Fetch all rows and store them in a list of dictionaries
     rows = cursor.fetchall()
 
-    for row in rows:
-        print(row)
+    if rows:
+        phobia_details = {}
+        for row in rows:
+            phobia_name = row['phobia']
+            symptom = row['symptom']
+            treatment = row['treatment']
 
-def update():
-    cursor.execute("UPDATE symptoms SET symptom = 'upset stomach or indigestion' WHERE id = 14")
+            if phobia_name not in phobia_details:
+                phobia_details[phobia_name] = {
+                    'symptoms': set(),
+                    'treatments': set()
+                }
 
-def main():
+            phobia_details[phobia_name]['symptoms'].add(symptom)
+            phobia_details[phobia_name]['treatments'].add(treatment)
 
-    #view_all('phobia_symptom_treatment')
-    #delete_table('phobia_symptom_treatment')
-    view_all_tables()
-    #view_table('phobias')
+        formatted_details = []
+        for phobia_name, data in phobia_details.items():
+            formatted_details.append({
+                'phobia_name': phobia_name,
+                'symptoms': ', '.join(data['symptoms']),
+                'treatments': ', '.join(data['treatments'])
+            })
 
-    #get_symptoms_and_treatments('Acrophobia (Fear of Heights)')
-    #get_symptom_phobia()
+        return render_template('phobia_symptom_treatment.html', phobia_details=formatted_details)
+    else:
+        return '<p>No data found.</p>'
+
 
 if __name__ == "__main__":
-    main()
-
-# Commit the changes and close the connection
-conn.commit()
-conn.close()
+    app.run(debug=True)

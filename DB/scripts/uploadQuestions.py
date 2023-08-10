@@ -6,7 +6,7 @@ conn = sqlite3.connect('phobias.db')
 conn.execute('''CREATE TABLE IF NOT EXISTS phobias
                 (id INTEGER PRIMARY KEY, name TEXT, description TEXT, data TEXT)''')
 
-folder_path = '../questions'  # Specify the path to the folder containing JSON files
+folder_path = '../../Data/questions' 
 
 for file_name in os.listdir(folder_path):
     if file_name.endswith('.json'):

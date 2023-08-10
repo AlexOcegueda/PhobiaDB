@@ -94,7 +94,7 @@ def insert_junction_data(json_folder):
 def main():
     create_junction_table()
 
-    json_folder = '../symptoms'  # Specify the path to the folder containing JSON files
+    json_folder = '../../Data/symptoms'  # Specify the path to the folder containing JSON files
     insert_junction_data(json_folder)
 
     for junction in junctions:

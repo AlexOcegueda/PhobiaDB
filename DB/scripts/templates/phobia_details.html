@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phobia Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Phobia Details</h1>
+    <h2>Phobia: {{ phobia_name }}</h2>
+    <h3>Description:</h3>
+    <p>{{ description }}</p>
+    <h3>Symptoms:</h3>
+    <p>{{ symptoms_str }}</p>
+    <h3>Treatments:</h3>
+    <p>{{ treatments_str }}</p>
+</body>
+</html>

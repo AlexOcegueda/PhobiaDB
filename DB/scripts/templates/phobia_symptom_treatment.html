@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phobia Symptom Treatment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Phobia Symptom Treatment Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Phobia</th>
+                <th>Symptoms</th>
+                <th>Treatments</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for phobia_detail in phobia_details %}
+            <tr>
+                <td>{{ phobia_detail.phobia_name }}</td>
+                <td>{{ ', '.join(phobia_detail.symptoms) }}</td>
+                <td>{{ ', '.join(phobia_detail.treatments) }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

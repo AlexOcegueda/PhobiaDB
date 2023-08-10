@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phobia API</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Phobia API!</h1>
+    
+    <!-- Dropdown list of phobias -->
+    <form id="phobia-form">
+        <select id="phobia-name" name="phobia_name">
+            {% for phobia in phobias %}
+            <option value="{{ phobia }}">{{ phobia }}</option>
+            {% endfor %}
+        </select>
+        <input type="button" value="Show Details" onclick="showPhobiaDetails()">
+    </form>
+    
+    <!-- Placeholder for displaying phobia details -->
+    <div id="phobia-details"></div>
+    
+    <script>
+        function showPhobiaDetails() {
+            var selectedPhobia = $('#phobia-name').val();
+            $.get('/phobia/' + selectedPhobia, function(data) {
+                $('#phobia-details').html(data);
+            });
+        }
+    </script>
+</body>
+</html>
