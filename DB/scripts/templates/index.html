@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Phobia API</title>
+    <title>Phobia Finder</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
+    <div id="wrapper" />
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Phobia API</a>
+            <a class="navbar-brand" href="#">Phobia Finder</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -18,15 +19,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
-                    <!-- Add more navigation links as needed -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/documentation">Documentation</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     
     <!-- Content -->
     <div class="container mt-5 selection">
-        <h1>Welcome to the Phobia API!</h1>
+        <h1>Welcome to the Phobia Finder!</h1>
         
         <!-- Dropdown list of phobias -->
         <form id="phobia-form" class="form-inline">
