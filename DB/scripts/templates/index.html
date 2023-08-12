@@ -2,24 +2,55 @@
 <html>
 <head>
     <title>Phobia API</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Welcome to the Phobia API!</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Phobia API</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </div>
+        </div>
+    </nav>
     
-    <!-- Dropdown list of phobias -->
-    <form id="phobia-form">
-        <select id="phobia-name" name="phobia_name">
-            {% for phobia in phobias %}
-            <option value="{{ phobia }}">{{ phobia }}</option>
-            {% endfor %}
-        </select>
-        <input type="button" value="Show Details" onclick="showPhobiaDetails()">
-    </form>
+    <!-- Content -->
+    <div class="container mt-5 selection">
+        <h1>Welcome to the Phobia API!</h1>
+        
+        <!-- Dropdown list of phobias -->
+        <form id="phobia-form" class="form-inline">
+            <div class="form-group">
+                <select id="phobia-name" name="phobia_name" class="form-control">
+                    {% for name, brief_description in phobia_info %}
+                    <option value="{{ name }}">{{ name }}  ({{ brief_description }})</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="showPhobiaDetails()">Show Details</button>
+        </form>
+
+        <!-- Placeholder for displaying phobia details -->
+        <div id="phobia-details"></div>
+    </div>
     
-    <!-- Placeholder for displaying phobia details -->
-    <div id="phobia-details"></div>
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2023 Phobia API. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
         function showPhobiaDetails() {

@@ -18,16 +18,15 @@ def close_db(error):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        # Handle the form submission here if needed
         pass
 
     # Fetch all phobias from the database in alphabetical order
     db = get_db()
     cursor = db.cursor()
-    cursor.execute('SELECT name FROM phobias ORDER BY name')
-    phobias = [row['name'] for row in cursor.fetchall()]
+    cursor.execute('SELECT name, brief_description FROM phobias ORDER BY name')  # Modify the query to select brief_description
+    phobia_info = [(row['name'], row['brief_description']) for row in cursor.fetchall()]  # Fetch name and brief_description
+    return render_template('index.html', phobia_info=phobia_info)  # Pass phobia_info to the template
 
-    return render_template('index.html', phobias=phobias)
 
 @app.route('/phobia/<phobia_name>', methods=['GET'])
 def get_phobia_details(phobia_name):
@@ -35,7 +34,7 @@ def get_phobia_details(phobia_name):
     cursor = db.cursor()
 
     cursor.execute('''
-        SELECT phobias.name, phobias.description, symptoms.symptom, treatments.treatment
+        SELECT phobias.name, phobias.description, phobias.brief_description, symptoms.symptom, treatments.treatment
         FROM phobia_symptom_treatment
         JOIN symptoms ON phobia_symptom_treatment.symptom_id = symptoms.id
         JOIN treatments ON phobia_symptom_treatment.treatment_id = treatments.id
@@ -47,6 +46,7 @@ def get_phobia_details(phobia_name):
     if rows:
         phobia_name = rows[0]['name']
         description = rows[0]['description']
+        brief_description = rows[0]['brief_description']  # New line to fetch brief_description
         symptoms_set = set()
         treatments_set = set()
 
@@ -58,17 +58,18 @@ def get_phobia_details(phobia_name):
         treatments_str = ', '.join(treatments_set)
 
         return render_template('phobia_details.html', phobia_name=phobia_name, description=description,
+                               brief_description=brief_description,  # Pass brief_description to template
                                symptoms_str=symptoms_str, treatments_str=treatments_str)
     
     else:
         return '<p>Phobia not found.</p>'
+
 
 @app.route('/phobia_symptom_treatment', methods=['GET'])
 def display_phobia_symptom_treatment():
     db = get_db()
     cursor = db.cursor()
 
-    # Execute a query to fetch data from the phobia_symptom_treatment table
     cursor.execute('''
     SELECT phobias.name AS phobia, symptoms.symptom, treatments.treatment
     FROM phobia_symptom_treatment
