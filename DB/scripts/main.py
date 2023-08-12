@@ -164,7 +164,6 @@ def get_phobia_symptoms(phobia_name):
 
     return json.dumps(symptoms_list)
 
-@app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         pass
