@@ -73,8 +73,8 @@ def main():
     create_symptoms_table()
     create_treatments_table()
 
-    conn.commit()  # Commit the changes to the database
-    conn.close()  # Close the database connection
+    conn.commit()  
+    conn.close()  
 
 if __name__ == "__main__":
     main()
