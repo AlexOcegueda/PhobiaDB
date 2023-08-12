@@ -66,7 +66,6 @@ def get_phobia_details(phobia_name):
     else:
         return '<p>Phobia not found.</p>'
 
-
 @app.route('/phobia_symptom_treatment', methods=['GET'])
 def display_phobia_symptom_treatment():
     db = get_db()
