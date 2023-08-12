@@ -16,6 +16,19 @@ def close_db(error):
     if db is not None:
         db.close()
 
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        pass
+
+    # Fetch all phobias from the database in alphabetical order
+    db = get_db()
+    cursor = db.cursor()
+    cursor.execute('SELECT name, brief_description FROM phobias ORDER BY name')  # Modify the query to select brief_description
+    phobia_info = [(row['name'], row['brief_description']) for row in cursor.fetchall()]  # Fetch name and brief_description
+    return render_template('index.html', phobia_info=phobia_info)  # Pass phobia_info to the template
+
+
 @app.route('/phobia/<phobia_name>', methods=['GET'])
 def get_phobia_details(phobia_name):
     db = get_db()
@@ -35,6 +48,7 @@ def get_phobia_details(phobia_name):
         phobia_name = rows[0]['name']
         description = rows[0]['description']
         brief_description = rows[0]['brief_description'] 
+
         symptoms_set = set()
         treatments_set = set()
 
