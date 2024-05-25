@@ -20,7 +20,6 @@ def create_junction_table():
     ''')
 
 def insert_junction_data(json_folder):
-    # Iterate through the JSON files in the specified folder
     for file_name in os.listdir(json_folder):
         if file_name.endswith('.json'):
             file_path = os.path.join(json_folder, file_name)
@@ -35,7 +34,7 @@ def insert_junction_data(json_folder):
                     phobia_name = phobia_full_name.split()[0].lower()
                     symptoms = []
                     treatments = []
-                    # Every question in this phobia
+                    
                     for question in phobia_data.keys():
                         if question.lower() in [f'what are {phobia_name} symptoms?',
                                         f'what are the symptoms of {phobia_name}?',
@@ -94,7 +93,7 @@ def insert_junction_data(json_folder):
 def main():
     create_junction_table()
 
-    json_folder = '../../Data/symptoms'  # Specify the path to the folder containing JSON files
+    json_folder = '../../Data/symptoms'  
     insert_junction_data(json_folder)
 
     for junction in junctions:

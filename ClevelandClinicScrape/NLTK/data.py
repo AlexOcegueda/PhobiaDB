@@ -1,3 +1,6 @@
+# Keyword extraction
+# Programmer: Alex Ocegueda Castro
+
 import json
 import os
 import nltk

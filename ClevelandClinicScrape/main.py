@@ -39,11 +39,9 @@ def crawl(url):
         wait = WebDriverWait(driver, 10)
         alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p","q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
         
-        # Browse A-Z btn
         first_button = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, 'js-library-search-nav__browse-btn')))
         first_button.click()
 
-        # Click through A-Z navigation
         for letter in alphabet:
             letter_id = f"aab3c309-de3a-40a3-a565-007740a9633djs-{letter}"
             letter_xpath = f"//*[@id='{letter_id}']"
@@ -55,7 +53,6 @@ def crawl(url):
 
             elements = driver.find_elements(By.CSS_SELECTOR, '.index-list-link') # diseases 
 
-            # Initialize an empty list for the crawled data
             crawled_data = []
 
             for element in elements:
@@ -71,7 +68,6 @@ def crawl(url):
                 except StaleElementReferenceException:
                     continue
 
-            # Save the list of crawled data to a new JSON file
             filename = f"crawled_data_{letter}.json"
             with open(filename, 'w', encoding='utf-8') as file:
                 json.dump(crawled_data, file, ensure_ascii=False)
@@ -122,7 +118,7 @@ def process_disease_page(url):
     except requests.exceptions.RequestException as e:
         print('Error:', e)
 
-geckodriver_path = './geckodriver'  # Replace with the actual path to geckodriver
+geckodriver_path = './geckodriver'  
 
 # KEEP IN MIND THIS IS FOR FIREFOX. MUST BE MODIFIED FOR CHROME OR OTHER BROWSERS 
 firefox_options = Options()

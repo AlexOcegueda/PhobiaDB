@@ -1,3 +1,7 @@
+# Ranks sentences on importance
+# Programmer: Alex Ocegueda Castro
+
+
 import json
 import os
 from transformers import pipeline

@@ -1,3 +1,6 @@
+# Question extraction
+# Programmer Alex Ocegueda Castro
+
 import json
 import os
 from nltk.corpus import stopwords

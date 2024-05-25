@@ -1,5 +1,6 @@
 # Cleans JSON data for use
 # Programmer: Alex Ocegueda Castro 
+
 import os
 import json
 import nltk

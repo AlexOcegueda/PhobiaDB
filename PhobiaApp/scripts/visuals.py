@@ -1,9 +1,9 @@
+# Suppose to create clear visuals of data
 import sqlite3
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Connect to the SQLite database
 conn = sqlite3.connect('./phobias.db')
 
 # Query the database to retrieve treatment data
@@ -17,24 +17,18 @@ query = '''
 '''
 df = pd.read_sql_query(query, conn)
 
-# Check if the dataframe is empty
 if df.empty:
     print("No data available for plotting.")
 else:
-    # Set the color palette for the barplot
     sns.set_palette('pastel')
 
-    # Create the bar graph using Seaborn
+    # Create the bar graph
     sns.barplot(x='count', y='treatment', data=df)
     plt.xlabel('Count')
     plt.ylabel('Treatment')
     plt.title('Most Common Treatments for Phobias')
-
-    # Adjust the layout to prevent labels from being cut off
     plt.tight_layout()
 
-    # Show the graph
     plt.show()
 
-# Close the database connection
 conn.close()
