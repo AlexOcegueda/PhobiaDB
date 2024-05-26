@@ -65,9 +65,7 @@ def get_phobia_details(phobia_name):
         symptoms_str = ', '.join(symptoms_set)
         treatments_str = ', '.join(treatments_set)
 
-        return render_template('phobia_details.html', phobia_name=phobia_name, description=description,
-                               brief_description=brief_description,
-                               symptoms_str=symptoms_str, treatments_str=treatments_str)
+        return render_template('phobia_details.html', phobia_name=phobia_name, description=description, brief_description=brief_description, symptoms_str=symptoms_str, treatments_str=treatments_str)
 
     return '<p>Phobia not found.</p>'
 
@@ -144,12 +142,29 @@ def get_phobia_symptoms(phobia_name):
         WHERE LOWER(phobias.name) = ?
     ''', (phobia_name_lower,))
     rows = cursor.fetchall()
-    symptoms_set = {row['symptom'] for row in rows}
-    return json.dumps(list(symptoms_set))
+
+    symptoms_set = set()
+
+    for row in rows:
+        symptoms_set.add(row['symptom'])
+
+    symptoms_list = list(symptoms_set)
+
+    return json.dumps(symptoms_list)
+
+def index():
+    if request.method == 'POST':
+        pass
+
+    # Fetch all phobias from the database in alphabetical order
+    db = get_db()
+    cursor = db.cursor()
+    cursor.execute('SELECT name, brief_description FROM phobias ORDER BY name')  
+    phobia_info = [(row['name'], row['brief_description']) for row in cursor.fetchall()]  
+    return render_template('index.html', phobia_info=phobia_info)  
 
 @app.route('/documentation', methods=['GET'])
 def documentation():
-    """Render the documentation page."""
     return render_template('documentation.html')
 
 if __name__ == "__main__":
