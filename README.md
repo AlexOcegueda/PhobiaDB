@@ -6,15 +6,23 @@ This repository contains scripts used to populate my Phobia Database with data c
 
 - **ClevelandClinicScrape**: Scripts for scraping data from the Cleveland Clinic website.
 - **WikipediaPhobiaScrape**: Scripts for scraping data from Wikipedia.
-- **DB**: Contains the main Flask application providing a UI for the phobia database, along with scripts to manage the database.
-- **DBScripts**: Contains scripts for populating database tables with questions and symptoms.
+- **Data**: Holds folders over of years of scraped phobia information.
+- **PhobiaApp**: Holds script for running the app (main.py) and for updating the database.
+- **Tests**: Holds testing scripts for verifying api endpoints, disease processing, and clicks while crawling.
 
 ## Usage
 
-Each scraper has its own documentation. Refer to these before attempting to use the scripts. To run the Flask application:
+To run the Flask application:
 
 ```
-cd DB/scripts
+cd PhobiaApp/scripts
+python main.py
+```
+
+To run the Cleveland Clinic Crawler:
+
+```
+cd ClevelandClinicScrape
 python main.py
 ```
 
