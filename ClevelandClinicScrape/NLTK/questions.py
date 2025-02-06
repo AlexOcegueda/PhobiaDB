@@ -59,8 +59,6 @@ def copy_and_restructure_json(input_folder_path, output_folder_path):
 
             print(f"JSON file copied and restructured. Output file: {output_file_path}")
 
-
-# Example usage
 input_folder_path = '../BackupData'  # Replace with the path to your input folder containing JSON files
 output_folder_path = '../questions'  # Replace with the desired path to store the output JSON files
 

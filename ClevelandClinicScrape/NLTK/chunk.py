@@ -26,7 +26,6 @@ def process_json_file(input_file, output_file):
         None
     """
     if os.path.exists(input_file):
-        # Load JSON data from the input file
         with open(input_file, 'r') as file:
             data = json.load(file)
 
@@ -67,7 +66,6 @@ def process_json_file(input_file, output_file):
 
             extracted_phrases = existing_data
 
-        # Write extracted phrases to the output JSON file
         with open(output_file, 'w') as outfile:
             json.dump(extracted_phrases, outfile, indent=4)
 
@@ -76,7 +74,6 @@ def process_json_file(input_file, output_file):
         print("Input file does not exist.")
 
 
-# Example usage
 input_json_file = './test/testa.json'
 output_json_file = './test/testa_output.json'
 process_json_file(input_json_file, output_json_file)

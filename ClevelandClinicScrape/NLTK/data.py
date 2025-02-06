@@ -119,7 +119,6 @@ def process_json_files(input_folder_path, output_folder_path):
             print(f"Sentence tokenization and keyword extraction complete. Output file: {output_file}")
 
 
-# Example usage
 input_folder_path = '../BackupData'  # Replace with the path to your folder containing input JSON files
 output_folder_path = '../datas'  # Replace with the desired path to store the output JSON files
 
