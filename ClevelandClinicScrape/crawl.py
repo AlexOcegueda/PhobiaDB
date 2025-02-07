@@ -140,11 +140,9 @@ def crawl(url, driver):
             for anchor in disease_anchors:
                 try:
                     href = anchor.get_attribute("href")
-                    #print("DEBUG href:", href)
-
+                    
                     # If the URL (href) contains "phobia", we consider it a match
                     if "phobia" in href.lower():
-                        print("DEBUG found a phobia link:", href)
                         result = process_disease_page(href)
                         crawled_data.append(result)
 
@@ -157,9 +155,9 @@ def crawl(url, driver):
                     continue
 
             # 6) Save JSON for this letter
-            filename = f"../Data/2025/DataBackup/test/crawled_data_{letter}.json"
-            with open(filename, "w", encoding="utf-8") as file:
-                json.dump(crawled_data, file, ensure_ascii=False)
+            filename = f"crawled_data_{letter}.json"
+            with open(filename, "w", encoding="utf-8") as f:
+                json.dump(crawled_data, f, ensure_ascii=False)
 
     except Exception as e:
         print("Error in crawl():", e)
