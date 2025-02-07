@@ -3,4 +3,3 @@ selenium
 flask
 requests
 beautifulsoup4
-os
