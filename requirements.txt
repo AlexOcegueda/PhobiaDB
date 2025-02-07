@@ -1,2 +1,6 @@
 pytest
 selenium
+flask
+requests
+beautifulsoup4
+sqlite3
