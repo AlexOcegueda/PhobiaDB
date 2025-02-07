@@ -1,5 +1,9 @@
 import requests
 import pytest
+import os
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+from ClevelandClinicScrape.crawl import crawl
 
 @pytest.mark.integration
 def test_live_treatment_endpoint():
@@ -34,3 +38,45 @@ def test_live_symptom_endpoint():
     returned_symptoms = set(symptoms_data)
     for symptom in expected_symptoms:
         assert symptom in returned_symptoms, f"Expected '{symptom}' in the live endpoint response."
+
+@pytest.mark.integration
+def test_scraper_integration_live():
+    """
+    Live integration test for our web scraper.
+
+    1. Spins up a real Firefox WebDriver (headless).
+    2. Calls our `crawl()` function against the live Cleveland Clinic site.
+    3. Checks if at least one JSON file got generated with data 
+       that indicates the scraper worked.
+    """
+
+    # 1) Set up a headless driver (adjust if you use Chrome, etc.)
+    options = Options()
+    options.add_argument("-headless")
+    driver = webdriver.Firefox(options=options)
+
+    try:
+        # 2) Call the real site
+        start_url = "https://my.clevelandclinic.org/health/diseases"
+        crawl(start_url, driver)
+
+    finally:
+        # 1) Quit the driver
+        driver.quit()
+
+    # Now outside the try/finally block, check if any file is non-empty:
+    found_nonempty = False
+    for letter in "abcdefghijklmnopqrstuvwxyz":
+        filename = f"crawled_data_{letter}.json"
+        if os.path.exists(filename):
+            if os.path.getsize(filename) > 0:
+                found_nonempty = True
+                break
+
+    assert found_nonempty, "Expected at least one non-empty JSON file..."
+
+    # Now that we've confirmed at least one file was non-empty, do cleanup:
+    for letter in "abcdefghijklmnopqrstuvwxyz":
+        filename = f"crawled_data_{letter}.json"
+        if os.path.exists(filename):
+            os.remove(filename)
