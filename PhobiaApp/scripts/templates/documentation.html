@@ -1,117 +1,72 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>PhobiaFinder - Documentation</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    </head>
-    <body>
-        <div id="wrapper" />
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">Phobia Finder</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/documentation">Documentation</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-        <!-- Content -->
-        <div class="container mt-5">
-            <h1>API Documentation</h1>
-            
-            <div class="mb-3">
-                <label for="api-url" class="form-label">Treatments Call</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="treatment-url" value="Acrophobia" placeholder="Enter phobia">
-                    <button class="btn btn-primary" type="button" onclick="fetchPhobiaTreatments()">Fetch Treatments</button>
-                </div>
-                <p class="form-text text-muted">http://127.0.0.1:5000/treatments/{Phobia}</p>
-            </div>
+{% extends "base.html" %}
 
-            <div id="treatments-data">
-                <ul id="treatments-list"></ul>
-            </div>
-            
-            <div class="mb-3">
-                <label for="phobia-url" class="form-label">Symptoms Call</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="phobia-url" value="Acrophobia" placeholder="Enter phobia">
-                    <button class="btn btn-primary" type="button" onclick="fetchPhobiaSymptoms()">Fetch Symptoms</button>
-                </div>
-                <p class="form-text text-muted">http://127.0.0.1:5000/symptoms/{Phobia}</p>
-            </div>
+{% block title %}Documentation{% endblock %}
 
-            <div id="api-data">
-                <ul id="symptoms-list"></ul>
-            </div>
-            
+{% block content %}
+<div class="container mt-5">
+    <h1>API Documentation</h1>
+
+    <div class="mb-3">
+        <label for="treatment-url" class="form-label">Treatments Call</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="treatment-url" value="Acrophobia" placeholder="Enter phobia">
+            <button class="btn btn-primary" type="button" onclick="fetchPhobiaTreatments()">Fetch Treatments</button>
         </div>
+        <p class="form-text text-muted">http://127.0.0.1:5000/treatments/{Phobia}</p>
+    </div>
 
-        <!-- Footer -->
-        <footer class="bg-light text-center py-3">
-            <p>&copy; 2023 Phobia API. All rights reserved.</p>
-        </footer>
-        
+    <div id="treatments-data">
+        <ul id="treatments-list"></ul>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        function fetchApiData() {
-            var apiUrl = $('#api-url').val();
-            $.get(apiUrl, function(data) {
-                $('#api-data').html(data);
-            });
-        }
+    <div class="mb-3">
+        <label for="phobia-url" class="form-label">Symptoms Call</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="phobia-url" value="Acrophobia" placeholder="Enter phobia">
+            <button class="btn btn-primary" type="button" onclick="fetchPhobiaSymptoms()">Fetch Symptoms</button>
+        </div>
+        <p class="form-text text-muted">http://127.0.0.1:5000/symptoms/{Phobia}</p>
+    </div>
 
-        function fetchPhobiaSymptoms() {
-            var phobiaUrl = $('#phobia-url').val();
-            $.get('/symptoms/' + phobiaUrl, function(data) {
-                var symptoms = JSON.parse(data);
-                var symptomsList = $('#symptoms-list');
-                symptomsList.empty();
+    <div id="api-data">
+        <ul id="symptoms-list"></ul>
+    </div>
+</div>
+{% endblock %}
 
-                if (symptoms.length > 0) {
-                    for (var i = 0; i < symptoms.length; i++) {
-                        var listItem = $('<li>').text(symptoms[i]);
-                        symptomsList.append(listItem);
-                    }
-                } else {
-                    symptomsList.append($('<li>').text('No symptoms found.'));
+{% block scripts %}
+<script>
+    // Note: You don't need to re-import jQuery here because it's in base.html
+    function fetchPhobiaSymptoms() {
+        var phobiaUrl = $('#phobia-url').val();
+        $.get('/symptoms/' + phobiaUrl, function(data) {
+            var symptoms = JSON.parse(data);
+            var symptomsList = $('#symptoms-list');
+            symptomsList.empty();
+            if (symptoms.length > 0) {
+                for (var i = 0; i < symptoms.length; i++) {
+                    symptomsList.append($('<li>').text(symptoms[i]));
                 }
-            });
-        }
+            } else {
+                symptomsList.append($('<li>').text('No symptoms found.'));
+            }
+        });
+    }
 
-        function fetchPhobiaTreatments() {
-            var phobiaUrl = $('#treatment-url').val();
-            $.get('/treatments/' + phobiaUrl, function(data) {
-                var treatments = JSON.parse(data);
-                var treatmentsList = $('#treatments-list');
-                treatmentsList.empty();
-
-                if (treatments.length > 0) {
-                    for (var i = 0; i < treatments.length; i++) {
-                        var listItem = $('<li>').text(treatments[i]);
-                        treatmentsList.append(listItem);
-                    }
-                } else {
-                    treatmentsList.append($('<li>').text('No treatments found.'));
+    function fetchPhobiaTreatments() {
+        var phobiaUrl = $('#treatment-url').val();
+        $.get('/treatments/' + phobiaUrl, function(data) {
+            var treatments = JSON.parse(data);
+            var treatmentsList = $('#treatments-list');
+            treatmentsList.empty();
+            if (treatments.length > 0) {
+                for (var i = 0; i < treatments.length; i++) {
+                    treatmentsList.append($('<li>').text(treatments[i]));
                 }
-            });
-        }
-
-    </script>
-
-
-    </body>
-</html>
+            } else {
+                treatmentsList.append($('<li>').text('No treatments found.'));
+            }
+        });
+    }
+</script>
+{% endblock %}
