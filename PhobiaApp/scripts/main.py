@@ -75,7 +75,7 @@ def display_phobia_symptom_treatment():
     db = get_db()
     cursor = db.cursor()
     cursor.execute('''
-    SELECT phobias.name AS phobia, symptoms.symptom, treatments.treatment
+SELECT phobias.name AS phobia, symptoms.symptom, treatments.treatment
     FROM phobia_symptom_treatment
     JOIN phobias ON phobia_symptom_treatment.phobia_id = phobias.id
     JOIN symptoms ON phobia_symptom_treatment.symptom_id = symptoms.id
@@ -166,6 +166,10 @@ def index():
 @app.route('/documentation', methods=['GET'])
 def documentation():
     return render_template('documentation.html')
+
+@app.route('/support')
+def support():
+    return render_template('support.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
